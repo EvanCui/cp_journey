@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio Build Files
+*.tlog
+*.lastbuildstate
+*.log
+*.user
+*.idb
+*.pdb
+**/.vs/**
+**/Debug/**
+**/Release/**
+*.ilk
