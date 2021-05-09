@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1031-Square Destroyer", "10
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4155-League of Legends", "4155-League of Legends\4155-League of Legends.vcxproj", "{AEA29499-460C-4238-8FDE-2DC6C30C846D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1057-Undercut", "1057-Undercut\1057-Undercut.vcxproj", "{9699C859-4EE2-4F6B-AB74-983BE08631C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -76,6 +78,18 @@ Global
 		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|x64.Build.0 = Release|x64
 		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|x86.ActiveCfg = Release|Win32
 		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|x86.Build.0 = Release|Win32
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Debug|ARM.ActiveCfg = Debug|Win32
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Debug|x64.ActiveCfg = Debug|x64
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Debug|x64.Build.0 = Debug|x64
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Debug|x86.ActiveCfg = Debug|Win32
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Debug|x86.Build.0 = Debug|Win32
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Release|ARM.ActiveCfg = Release|Win32
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Release|ARM64.ActiveCfg = Release|Win32
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Release|x64.ActiveCfg = Release|x64
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Release|x64.Build.0 = Release|x64
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Release|x86.ActiveCfg = Release|Win32
+		{9699C859-4EE2-4F6B-AB74-983BE08631C2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
