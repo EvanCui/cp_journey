@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1027", "1027-Human Gene Functions\1027.vcxproj", "{C26C80E2-5427-46E1-BEE4-E01614215A68}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1027-Human Gene Functions", "1027-Human Gene Functions\1027.vcxproj", "{C26C80E2-5427-46E1-BEE4-E01614215A68}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1019-Illusive Chase", "1019-Illusive Chase\1019-Illusive Chase.vcxproj", "{DD91178C-67AD-4708-BD5C-ECE813ABEC42}"
 EndProject
@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1031-Square Destroyer", "1031-Square Destroyer\1031-Square Destroyer.vcxproj", "{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4155-League of Legends", "4155-League of Legends\4155-League of Legends.vcxproj", "{AEA29499-460C-4238-8FDE-2DC6C30C846D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +52,30 @@ Global
 		{DD91178C-67AD-4708-BD5C-ECE813ABEC42}.Release|x64.Build.0 = Release|x64
 		{DD91178C-67AD-4708-BD5C-ECE813ABEC42}.Release|x86.ActiveCfg = Release|Win32
 		{DD91178C-67AD-4708-BD5C-ECE813ABEC42}.Release|x86.Build.0 = Release|Win32
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Debug|ARM.ActiveCfg = Debug|Win32
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Debug|x64.ActiveCfg = Debug|x64
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Debug|x64.Build.0 = Debug|x64
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Debug|x86.ActiveCfg = Debug|Win32
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Debug|x86.Build.0 = Debug|Win32
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Release|ARM.ActiveCfg = Release|Win32
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Release|ARM64.ActiveCfg = Release|Win32
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Release|x64.ActiveCfg = Release|x64
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Release|x64.Build.0 = Release|x64
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Release|x86.ActiveCfg = Release|Win32
+		{0804CCA0-1086-45C9-8F03-9A2DA818CD3C}.Release|x86.Build.0 = Release|Win32
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Debug|ARM.ActiveCfg = Debug|Win32
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Debug|x64.ActiveCfg = Debug|x64
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Debug|x64.Build.0 = Debug|x64
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Debug|x86.ActiveCfg = Debug|Win32
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Debug|x86.Build.0 = Debug|Win32
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|ARM.ActiveCfg = Release|Win32
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|ARM64.ActiveCfg = Release|Win32
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|x64.ActiveCfg = Release|x64
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|x64.Build.0 = Release|x64
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|x86.ActiveCfg = Release|Win32
+		{AEA29499-460C-4238-8FDE-2DC6C30C846D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
