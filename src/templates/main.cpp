@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    info(pair<int, string>(1, "ddd"));
+    logger::info(pair<int, string>(1, "ddd"));
     info("abc");
     info("abc", 123);
     info("abc", 123, 2.5);
