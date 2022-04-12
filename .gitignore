@@ -43,3 +43,6 @@
 **/Release/**
 *.ilk
 *.filters
+
+# temp files
+*~
