@@ -15,13 +15,13 @@ typedef map<int, int> MII;
 typedef unordered_map<int, int> UII;
 
 class logger {
-    static constexpr bool LOG = true;
+    static constexpr bool LOG = 1;
 
     template <class T> inline static void _info(const T &v) { cout << v; }
     inline static void _info(const string &v) { cout << v; }
     template <class K, class V> inline static void _info(const pair<K, V> &v) { info<'\0', false>('(', v.first, ',', v.second, ')'); }
     template <template <class T1, class T2> class M, class K, class V>
-    inline static void _info(const M<K, V> &v) { _info("["); bool f = true; for (auto &p : v) { f = f || (cout << "," && false); _info(p); } _info("]"); }
+    inline static void _info(const M<K, V> &v) { _info("["); bool f = true; for (auto &p : v) { f = (f || cout << ",") && false; _info(p); } _info("]"); }
     public:
     template <char sep = ',', bool el = true, class... T> inline static void info(const T &...args) {
         if constexpr (LOG) {
