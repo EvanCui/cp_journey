@@ -2,18 +2,43 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     logger::info(pair<int, string>(1, "ddd"));
-    info("abc");
-    info("abc", 123);
-    info("abc", 123, 2.5);
-    info("abc", 123, 2.5, pair<int, string>(1, "ddd"));
-    info(map<int, string>({ { 1, "abc" }}));
-    UII u;
-    u[1] = 1;
-    u[2] = 1;
-    u[3] = 1;
-    info(u);
-    info(unordered_map<int, string>({ { 1, "abc" }}));
-    info("abc", 123, 2.5, vector<int>({1,2,3}));
+    STR s = "abc";
+    info(s);
+    LL l = 25L;
+    info(l);
+
+    VI vi{1, 2, 3, 4, 5};
+    info(vi);
+    VVI vvi{{1, 2, 3}, {4, 5, 6}};
+    info(vvi);
+    VLL vll{1, 2, 3, 4, 5};
+    info(vll);
+    VVLL vvll{{1, 2, 3}, {4, 5, 6}};
+    info(vvll);
+    VS vs{"abc", "def"};
+    info(vs);
+    PII pii{1, 2};
+    info(pii);
+    MII mii{{1, 2}, {3, 4}};
+    info(mii);
+    SI si{1, 2, 3, 4};
+    info(si);
+    UII uii{{1, 2}, {3, 4}};
+    info(uii);
+    UI ui{1, 2, 3, 4};
+    info(ui);
+    info(vi, vvi, vll, vvll, vs, pii, mii, si, uii, ui);
+
+    M<int, STR> mis = {{1, "abc"}, {2, "def"}};
+    info(mis);
+
+    VV<UII> vvuii(1, V<UII>(1));
+    vvuii[0][0][2] = 5;
+    info(vvuii);
+
+    UM<int, STR> umis{{1, "abc"}, {2, "def"}};
+    info(umis);
 }
