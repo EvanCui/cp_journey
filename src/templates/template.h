@@ -21,7 +21,7 @@ class logger {
     inline static void _info(const string &v) { cout << v; }
     template<class K, class V> inline static void _info(const pair<K, V> &v) { info<'\0', false>('(', v.first, ',', v.second, ')'); }
     template<template<class...>class M,class...T>
-    inline static void _info(const M<T...> &v){_info("[");int o=0;for(auto &p:v){o++>0&&cout<<",";_info(p);}_info("]");}
+    inline static void _info(const M<T...> &v){_info("[");int o=0;for(const auto &p:v){o++>0&&cout<<",";_info(p);}_info("]");}
 public:
     template <char sep = ',', bool el = true, class... T> inline static void info(const T &...a) {
         if constexpr(LOG){int o=0; const auto &d={(_info(a),++o<sizeof...(a)?(sep&&cout<<sep):(el&&cout<<endl))...};}

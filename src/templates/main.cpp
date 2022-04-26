@@ -41,4 +41,15 @@ int main()
 
     UM<int, STR> umis{{1, "abc"}, {2, "def"}};
     info(umis);
+
+    VV<bool> vvb(2, V<bool>(2, false));
+    info(vvb);
+
+    UM<STR, VV<bool>> umstrvvb;
+    umstrvvb["abc"] = VV<bool>(2, V<bool>(2, true));
+    umstrvvb["def"] = VV<bool>(2);
+    info(umstrvvb);
+    for (auto it : umstrvvb) {
+        info(it);
+    }
 }
