@@ -52,4 +52,15 @@ int main()
     for (auto it : umstrvvb) {
         info(it);
     }
+
+    PII pii_ori{1, 1};
+    for (auto d : dir4) { info(pii_ori + d); }
+    for (auto d : dir8) { info(pii_ori + d); }
+    for (auto d : dir4) { info(to_vi(pii_ori) + d); }
+    for (auto d : dir8) { info(to_vi(pii_ori) + d); }
+    VI vi_ori{1, 1};
+    for (auto d : dir4) { info(to_vi(to_pii(vi_ori) + d)); }
+    for (auto d : dir8) { info(to_vi(to_pii(vi_ori) + d)); }
+    for (auto d : dir4) { info(vi_ori + d); }
+    for (auto d : dir8) { info(vi_ori + d); }
 }

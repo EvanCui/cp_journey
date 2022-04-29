@@ -13,6 +13,11 @@ template<class T1, class T2> using M=map<T1, T2>; template<class T1, class T2> u
 template<class T> using S=set<T>; template<class T> using US=unordered_set<T>;
 using VI=V<int>; using VVI=V<VI>; using VLL=V<LL>; using VVLL=V<VLL>; using VS=V<STR>;
 using PII=P<int, int>; using MII=M<int, int>; using SI=S<int>; using UII=UM<int, int>; using UI=US<int>;
+V<PII> dir4{{-1,0},{1,0},{0,-1},{0,1}};
+V<PII> dir8{{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
+PII operator+(PII a, PII b){return{a.first+b.first,a.second+b.second};}VI operator+(VI& a,VI& b){return{a[0]+b[0],a[1]+b[1]};}
+PII operator+(PII a, VI b){return{a.first+b[0],a.second+b[1]};}VI operator+(VI a,PII b){return{a[0]+b.first,a[1]+b.second};}
+PII to_pii(VI a){return{a[0],a[1]};}VI to_vi(PII a){return{a.first,a.second};}
 
 class logger {
     static constexpr bool LOG = 1;
