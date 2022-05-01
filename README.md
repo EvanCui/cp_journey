@@ -1,2 +1,5 @@
-# acm
-Code and analysis for problems on the online judge systems. Mainly written in C++.
+# CP (Competitive Programming) Journey
+
+This is a journey of my competitive programming.
+
+
