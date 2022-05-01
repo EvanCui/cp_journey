@@ -42,12 +42,9 @@ int main()
     UM<int, STR> umis{{1, "abc"}, {2, "def"}};
     info(umis);
 
-    VV<bool> vvb(2, V<bool>(2, false));
-    info(vvb);
-
-    UM<STR, VV<bool>> umstrvvb;
-    umstrvvb["abc"] = VV<bool>(2, V<bool>(2, true));
-    umstrvvb["def"] = VV<bool>(2);
+    UM<STR, VVB> umstrvvb;
+    umstrvvb["abc"] = VVB(2, VB(2, true));
+    umstrvvb["def"] = VVB(2);
     info(umstrvvb);
     for (auto it : umstrvvb) {
         info(it);
@@ -63,4 +60,7 @@ int main()
     for (auto d : dir8) { info(to_vi(to_pii(vi_ori) + d)); }
     for (auto d : dir4) { info(vi_ori + d); }
     for (auto d : dir8) { info(vi_ori + d); }
+    VVB vvb;
+    vvb.assign(2, VB(2, false));
+    info(vvb);
 }

@@ -11,7 +11,7 @@ using STR=string; using LL=long long;
 template<class T> using V=vector<T>;template<class T> using VV=V<V<T>>; template<class T1, class T2> using P=pair<T1, T2>;
 template<class T1, class T2> using M=map<T1, T2>; template<class T1, class T2> using UM=unordered_map<T1, T2>;
 template<class T> using S=set<T>; template<class T> using US=unordered_set<T>;
-using VI=V<int>; using VVI=V<VI>; using VLL=V<LL>; using VVLL=V<VLL>; using VS=V<STR>;
+using VI=V<int>; using VVI=V<VI>; using VLL=V<LL>; using VVLL=V<VLL>; using VS=V<STR>; using VB=V<bool>; using VVB=VV<bool>;
 using PII=P<int, int>; using MII=M<int, int>; using SI=S<int>; using UII=UM<int, int>; using UI=US<int>;
 V<PII> dir4{{-1,0},{1,0},{0,-1},{0,1}};
 V<PII> dir8{{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
