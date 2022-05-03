@@ -18,10 +18,9 @@ V<PII> dir8{{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
 PII operator+(PII a, PII b){return{a.first+b.first,a.second+b.second};}VI operator+(VI& a,VI& b){return{a[0]+b[0],a[1]+b[1]};}
 PII operator+(PII a, VI b){return{a.first+b[0],a.second+b[1]};}VI operator+(VI a,PII b){return{a[0]+b.first,a[1]+b.second};}
 PII to_pii(VI a){return{a[0],a[1]};}VI to_vi(PII a){return{a.first,a.second};}
+#define FOR(i, n) for (int i = 0; i < (n); i++)
 
 class logger {
-    static constexpr bool LOG = 1;
-
     template<class T> inline static void _info(const T &v) { cout << v; }
     inline static void _info(const string &v) { cout << v; }
     template<class K, class V> inline static void _info(const pair<K, V> &v) { info<'\0', false>('(', v.first, ',', v.second, ')'); }
@@ -32,5 +31,9 @@ public:
         if constexpr(LOG){int o=0; const auto &d={(_info(a),++o<sizeof...(a)?(sep&&cout<<sep):(el&&cout<<endl))...};}
     }
 };
-
-template <class... T> inline static void info(const T &...args) { logger::info(args...); }
+#define LOG
+template <class... T> inline static void info(const T &...args) {
+#ifdef LOG
+    logger::info(args...);
+#endif
+}
