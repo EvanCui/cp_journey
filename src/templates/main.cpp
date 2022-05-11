@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    fast_io();
     logger::info(pair<int, string>(1, "ddd"));
     STR s = "abc";
     info(s);

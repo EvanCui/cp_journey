@@ -19,6 +19,7 @@ PII operator+(PII a, PII b){return{a.first+b.first,a.second+b.second};}VI operat
 PII operator+(PII a, VI b){return{a.first+b[0],a.second+b[1]};}VI operator+(VI a,PII b){return{a[0]+b.first,a[1]+b.second};}
 PII to_pii(VI a){return{a[0],a[1]};}VI to_vi(PII a){return{a.first,a.second};}
 #define FOR(i, n) for (int i = 0; i < (n); i++)
+void fast_io() { cin.tie(nullptr); ios::sync_with_stdio(false); }
 
 class logger {
     template<class T> inline static void _info(const T &v) { cout << v; }
@@ -28,7 +29,7 @@ class logger {
     inline static void _info(const M<T...> &v){_info("[");int o=0;for(const auto &p:v){o++>0&&cout<<",";_info(p);}_info("]");}
 public:
     template <char sep = ',', bool el = true, class... T> inline static void info(const T &...a) {
-        if constexpr(LOG){int o=0; const auto &d={(_info(a),++o<sizeof...(a)?(sep&&cout<<sep):(el&&cout<<endl))...};}
+        size_t o=0; [_={(_info(a),++o<sizeof...(a)?(sep&&cout<<sep):(el&&cout<<endl))...}]{};
     }
 };
 #define LOG
