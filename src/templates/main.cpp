@@ -64,4 +64,9 @@ int main()
     VVB vvb;
     vvb.assign(2, VB(2, false));
     info(vvb);
+
+    tuple t { 2, "abc", 3.5 };
+    tuple t1 {};
+    info(t);
+    info(t1);
 }
