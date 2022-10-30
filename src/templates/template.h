@@ -30,9 +30,21 @@ public:
         size_t o=0; [_={(_info(a),++o<sizeof...(a)?(sep&&cout<<sep):(el&&cout<<endl))...}]{};
     }
 };
+
 #define LOG
 template <class... T> inline static void info(const T &...args) {
 #ifdef LOG
     logger::info(args...);
 #endif
 }
+
+struct ufs {
+    VI u;
+    ufs(int n) : u(n) { FOR (i, n) u[i] = i; }
+    int find(int i) { return i == u[i] ? i : (u[i] = find(u[i])); }
+    void uni(int i, int j) {
+        int pi = find(i), pj = find(j);
+        if (pi == pj) return;
+        u[pi] = pj;
+    }
+};
