@@ -16,6 +16,20 @@ PII to_pii(VI a){return{a[0],a[1]};}VI to_vi(PII a){return{a.first,a.second};}
 #define FOR(i, n) for (int i = 0; i < int(n); i++)
 void fast_io() { cin.tie(nullptr); ios::sync_with_stdio(false); }
 
+struct ufs {
+    VI u;
+    ufs(int n) : u(n) { FOR (i, n) u[i] = i; }
+    int find(int i) { return i == u[i] ? i : (u[i] = find(u[i])); }
+    void uni(int i, int j) { u[find(i)] = find(j); }
+};
+struct fenwick {
+    vector<int> f;
+    fenwick(int n) : f(n + 1) { }
+    int lowbit(int i) { return i & -i; }
+    void add(int i, int d) { while (i < f.size()) { f[i] += d; i += lowbit(i); } }
+    int ask(int i) { int ans = 0; while (i > 0) { ans += f[i]; i -= lowbit(i); } return ans;}
+};
+
 class logger {
     template<class T> inline static void _info(const T &v) { cout << v; }
     inline static void _info(const string &v) { cout << v; }
@@ -37,14 +51,3 @@ template <class... T> inline static void info(const T &...args) {
     logger::info(args...);
 #endif
 }
-
-struct ufs {
-    VI u;
-    ufs(int n) : u(n) { FOR (i, n) u[i] = i; }
-    int find(int i) { return i == u[i] ? i : (u[i] = find(u[i])); }
-    void uni(int i, int j) {
-        int pi = find(i), pj = find(j);
-        if (pi == pj) return;
-        u[pi] = pj;
-    }
-};
